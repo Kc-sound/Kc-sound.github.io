@@ -7,7 +7,7 @@ let response = {
 	},
 	content: {
 		1: {
-			rank: "21",
+			rank: "1",
 			artist: "DJ Khaled",
 			"last week": "-",
 			"peak position": "1",

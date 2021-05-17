@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Kc-Sound</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+	<section id="main">
+		<header>
+			<nav>
+				<img src="https://res.cloudinary.com/dmcvmhzqz/image/upload/v1620923054/logo_jmjonb.png" width="70" height="70" alt="Logo">
+				<div>
+					<button id="Signin" onClick="ChangeStatusSin()"> Sign in </button>
+					<button id="Register" onClick="ChangeStatusReg()"> Register </button>
+				</div>
+			</nav>
+		</header>
+		<h1 id="titre">KC-Sound</h1>
+		<div id="RechMus">
+			 <input id="champ" type="text"/>
+		</div>
+	</section>
+	
+	<section id="PopUp">
+	<form id="PopupSign">
+		<div id="boutonFermer">
+			<button id="close" onClick="ChangeStatusSin()"> X </button>
+		</div>
+		<div id="champ1">
+			<div>
+				<label>Pseudo : </label>
+				<input id="champ" type="text" placeholder="Jean, Marie..." required minlength="4" maxlength="15"/>
+			</div>
+			<div>
+				<label>Password : </label>
+				<input id="champ" type="password" placeholder="azerty123" required/>
+			</div>
+		</div>
+	<div id="bouton1">
+		<button>Forgot password</button>
+		<button type="submit">Validate</button>
+	</div>
+		<div id="changer">
+			<button id="goToR" onClick="Swap()">Want to register</button>
+		</div>
+	</form>
+	
+	<form id="PopupReg">
+		<div id="boutonFermer">
+		<button id="close" onClick="ChangeStatusReg()"> X </button>
+		</div>
+			<div id="champ1">
+				<label>Mail :
+			<input id="champ" type="text" placeholder="Jean@gmail.com"/>
+					</label>
+				<label>Pseudo :
+			<input id="champ" type="text" placeholder="Jean, Marie..." required/>
+				</label>
+				<label>Password :
+			<input id="champ" type="password" placeholder="azerty123" required/>
+		</label>
+				<label>Comfirm password :
+			<input id="champ" type="password" placeholder="azerty123" required/>
+	</label>
+			</div>
+		<div id="bouton1">
+		<button type="submit">Validate</button>
+		</div>
+		<div id="changer">
+		<button id="goToS" onClick="Swap()">Already registered</button>
+			</div>
+	</form>
+	</section>
+	
+	<section id="second">
+		<h1></h1>
+
+		<div id="music">
+			<h1>Top 10 This Week</h1>
+		</div>
+
+		<div id="forYou">
+			<h1>Music For You</h1>
+			<div>
+				<h2>For you</h2>
+				<div>
+					<!-- Faire onclick dynamique -->
+					<a onclick="closee()">
+						<img src="images/coldplay.jpg" />
+						<h3>This is Coldp..</h3>
+						<p>Coldplay</p>
+					</a>
+					<a>
+						<img src="images/working.png" />
+						<h3>Title</h3>
+						<p>Artist</p>
+					</a>
+					<a>
+						<img src="images/working.png" />
+						<h3>Title</h3>
+						<p>Artist</p>
+					</a>
+				</div>
+				<hr />
+				<h2>Recently played</h2>
+				<div>
+					<a>
+						<img src="images/working.png" />
+						<h3>Title</h3>
+						<p>Artist</p>
+					</a>
+					<a>
+						<img src="images/working.png" />
+						<h3>Title</h3>
+						<p>Artist</p>
+					</a>
+
+					<a>
+						<img src="images/working.png" />
+						<h3>Title</h3>
+						<p>Artist</p>
+					</a>
+				</div>
+				<hr />
+				<h2>Recommended</h2>
+				<div>
+					<a>
+						<img src="images/working.png" />
+						<h3>Title</h3>
+						<p>Artist</p>
+					</a>
+					<a>
+						<img src="images/working.png" />
+						<h3>Title</h3>
+						<p>Artist</p>
+					</a>
+					<a>
+						<img src="images/working.png" />
+						<h3>Title</h3>
+						<p>Artist</p>
+					</a>
+				</div>
+				<hr />
+				<h2>Your Mix</h2>
+				<div>
+					<a>
+						<img src="images/working.png" />
+						<h3>Title</h3>
+						<p>Artist</p>
+					</a>
+					<a>
+						<img src="images/working.png" />
+						<h3>Title</h3>
+						<p>Artist</p>
+					</a>
+					<a>
+						<img src="images/working.png" />
+						<h3>Title</h3>
+						<p>Artist</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- to be replaced with dynamic object -->
+	<section id="theMusic">
+		<div id="musicPopUp">
+			<h2>This is Coldplay!</h2>
+			<a onclick="closee()">
+				<img src="images/x.svg"/>
+				</svg>
+			</a>
+			<iframe id="t" src="https://open.spotify.com/embed/playlist/37i9dQZF1DXaQm3ZVg9Z2X" width="300" height="380"
+				frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+		</div>
+	</section>
+	<footer>
+
+	</footer>
+	<!-- partial -->
+	<script src='js/jquery.js'></script>
+	<script src="js/script.js"></script>
+
+</body>
+
+</html>

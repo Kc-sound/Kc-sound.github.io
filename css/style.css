@@ -6,7 +6,7 @@ body {
 #main {
 	display: flex;
 	height: 100vh;
-	background-image: url("https://res.cloudinary.com/dmcvmhzqz/image/upload/v1620927443/fond_xugf7b.jpg");
+	background-image: url("./images/bg.jpg");
 	background-size: cover;
 	justify-content: space-between;
 	flex-direction: column;

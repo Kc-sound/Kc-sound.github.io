@@ -27,54 +27,54 @@
 	</section>
 	
 	<section id="PopUp">
-	<form id="PopupSign">
-		<div id="boutonFermer">
-			<button id="close" onClick="ChangeStatusSin()"> X </button>
-		</div>
-		<div id="champ1">
-			<div>
-				<label>Pseudo : </label>
-				<input id="champ" type="text" placeholder="Jean, Marie..." required minlength="4" maxlength="15"/>
+		<form id="PopupSign">
+			<div id="boutonFermer">
+				<button id="close" onClick="ChangeStatusSin()"> X </button>
 			</div>
-			<div>
-				<label>Password : </label>
-				<input id="champ" type="password" placeholder="azerty123" required/>
-			</div>
-		</div>
-	<div id="bouton1">
-		<button>Forgot password</button>
-		<button type="submit">Validate</button>
-	</div>
-		<div id="changer">
-			<button id="goToR" onClick="Swap()">Want to register</button>
-		</div>
-	</form>
-	
-	<form id="PopupReg">
-		<div id="boutonFermer">
-		<button id="close" onClick="ChangeStatusReg()"> X </button>
-		</div>
 			<div id="champ1">
-				<label>Mail :
-			<input id="champ" type="text" placeholder="Jean@gmail.com"/>
-					</label>
-				<label>Pseudo :
-			<input id="champ" type="text" placeholder="Jean, Marie..." required/>
-				</label>
-				<label>Password :
-			<input id="champ" type="password" placeholder="azerty123" required/>
-		</label>
-				<label>Comfirm password :
-			<input id="champ" type="password" placeholder="azerty123" required/>
-	</label>
+				<div>
+					<label>Pseudo : </label>
+					<input id="champ" type="text" placeholder="Jean, Marie..." required minlength="4" maxlength="15"/>
+				</div>
+				<div>
+					<label>Password : </label>
+					<input id="champ" type="password" placeholder="azerty123" required/>
+				</div>
 			</div>
 		<div id="bouton1">
-		<button type="submit">Validate</button>
+			<button>Forgot password</button>
+			<button type="submit">Validate</button>
 		</div>
-		<div id="changer">
-		<button id="goToS" onClick="Swap()">Already registered</button>
+			<div id="changer">
+				<button id="goToR" onClick="Swap()">Want to register</button>
 			</div>
-	</form>
+		</form>
+	
+		<form id="PopupReg">
+			<div id="boutonFermer">
+			<button id="close" onClick="ChangeStatusReg()"> X </button>
+			</div>
+				<div id="champ1">
+					<label>Mail :
+				<input id="champ" type="text" placeholder="Jean@gmail.com"/>
+						</label>
+					<label>Pseudo :
+				<input id="champ" type="text" placeholder="Jean, Marie..." required/>
+					</label>
+					<label>Password :
+				<input id="champ" type="password" placeholder="azerty123" required/>
+			</label>
+					<label>Comfirm password :
+				<input id="champ" type="password" placeholder="azerty123" required/>
+		</label>
+				</div>
+			<div id="bouton1">
+			<button type="submit">Validate</button>
+			</div>
+			<div id="changer">
+			<button id="goToS" onClick="Swap()">Already registered</button>
+				</div>
+		</form>
 	</section>
 	
 	<section id="second">
@@ -167,6 +167,7 @@
 			</div>
 		</div>
 	</section>
+	
 	<!-- to be replaced with dynamic object -->
 	<section id="theMusic">
 		<div id="musicPopUp">
@@ -184,6 +185,10 @@
 	</footer>
 	<!-- partial -->
 	<script src='js/jquery.js'></script>
+	<script src="js/three.js"></script>
+	<script type="module" src="js/GLTFLoader.js"></script>
+	<script type="module" src="js/OrbitControls.js"></script>
+	<script type="module" src="js/guitar.js"></script>
 	<script src="js/script.js"></script>
 
 </body>

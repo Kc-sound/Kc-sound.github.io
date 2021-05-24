@@ -8,14 +8,24 @@
 
 body {
 	margin: 0;
+	padding: 0;
 	font-family: Comfortaa;
 	overflow-x: hidden;
 	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	background-image: linear-gradient(
+		to right bottom,
+		#050a20,
+		#101426,
+		#181c2c,
+		#212333,
+		#292b39
+	);
 }
 #main {
 	display: flex;
 	height: 100vh;
-	background: var(--background);
 	background-size: cover;
 	justify-content: space-between;
 	flex-direction: column;
@@ -54,19 +64,39 @@ nav {
 	align-items: center;
 }
 #RechMus input {
+	border-radius: 10px 0 0 10px;
 	padding: 10px;
 	margin: 0;
 	border: none;
 	height: 20px;
 }
 #RechMus input:focus {
-	margin: 0;
-	border: none;
+	outline: none;
+	-webkit-box-shadow: 0px 0px 10px 0px var(--main);
+	box-shadow: 0px 0px 10px 2px var(--main);
+}
+#RechMus input:focus + label {
+	outline: none;
+	-webkit-box-shadow: 0px 0px 10px 0px var(--main);
+	box-shadow: 0px 0px 10px 2px var(--main);
+}
+#RechMus label {
+	border-radius: 0 10px 10px 0;
+	background-color: white;
+	height: 40px;
+}
+#RechMus label:hover {
+	cursor: pointer;
+	background-color: white;
 }
 #RechMus img {
-	background-color: white;
+	transition: all 0.05s ease-in-out;
 	width: 30px;
 	padding: 5px;
+}
+#RechMus img:hover {
+	transition: all 0.05s ease-in-out;
+	transform: scale(1.1);
 }
 
 #titre {
@@ -185,12 +215,16 @@ a {
 }
 
 .transitionsvg {
-	fill: var(--background);
+	fill: white;
+	padding: 0;
+	margin: 0;
+	transform: translateY(20px);
 }
 #second {
 	display: flex;
 	padding-top: 2em;
 	padding-bottom: 2em;
+	background-color: white;
 }
 #second h1 {
 	text-align: center;
@@ -482,7 +516,7 @@ canvas.absolute {
 	height: 100vh;
 	width: 100%;
 	clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0 100%, 0 0);
-	position: absolute;
+	position: fixed;
 	top: 0;
 	z-index: 99;
 }

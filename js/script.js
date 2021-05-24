@@ -201,3 +201,26 @@ if (PopR.classList.contains('is-visible')) {
 	PopS.classList.remove('is-visible');
 }
 }
+
+/* Loader :*/
+
+const paths = document.querySelectorAll(".path");
+const loader = document.getElementById("loader");
+let mainline = document.getElementById("mainline");
+let removeTime = 1; //in seconds
+
+paths.forEach((path) =>{
+	let totalLen = path.getTotalLength();
+	let pathElement = path;
+	pathElement.setAttribute("stroke-dasharray", totalLen);
+	pathElement.setAttribute("stroke-dashoffset", totalLen);
+});
+
+//after animation end remove lines
+mainline.addEventListener('animationend', () => {
+	loader.style.transition= `all ${removeTime}s`
+	loader.style.clipPath = "polygon(0 0, -10% 50%, 0 100%, 0 100%, 0 0)"
+	document.body.style.overflowY = "auto";
+	swoop('titre',2000,300,false);
+});
+

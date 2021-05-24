@@ -8,7 +8,7 @@ const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.inner
 
 
 //lumiere simple
-const light = new THREE.AmbientLight( 0x404040 ); // soft white light
+const light = new THREE.AmbientLight( 0xffffff); // soft white light
 scene.add( light );
 
 // le canvas
@@ -66,7 +66,7 @@ function rotateScene(deltaX, deltaY) {
 
 function moveScene(moveX) {
     myobj.scene.position.x = moveX  ;
-} 
+}
 
 let minAngleX = -0.7,
     maxAngleX = 0.2,

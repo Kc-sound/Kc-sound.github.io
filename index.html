@@ -5,11 +5,18 @@
 	<meta charset="UTF-8">
 	<title>Kc-Sound</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/swoop.css">
 	<link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
+	<div id="loader">
+		<svg viewbox="0 0 1920 188">
+			<path d="M0 75.2c1066.2 201.2 997.6-138.2 1920 0" id="mainline" class="path"></path>
+			<path d="M0 62.6c1066.2 201.2 997.6-138.2 1920 0" id="shadowline" class="path"></path>
+		</svg>
+	</div>
+
 	<section id="main">
 		<header>
 			<nav>
@@ -23,6 +30,7 @@
 		<h1 id="titre">KC-Sound</h1>
 		<div id="RechMus">
 			 <input id="champ" type="text"/>
+			 <img src="images/loupe.svg"/>
 		</div>
 	</section>
 	
@@ -76,7 +84,9 @@
 				</div>
 		</form>
 	</section>
-	
+	<svg viewBox="0 0 1440 201">
+		<path class="transitionsvg" d="M0,96L80,90.7C160,85,320,75,480,101.3C640,128,800,192,960,197.3C1120,203,1280,149,1360,122.7L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+	  </svg>
 	<section id="second">
 		<h1></h1>
 
@@ -185,12 +195,12 @@
 	</footer>
 	<!-- partial -->
 	<script src='js/jquery.js'></script>
-	<script src="js/three.js"></script>
+	<script type="module" src="js/three.js"></script>
 	<script type="module" src="js/GLTFLoader.js"></script>
 	<script type="module" src="js/OrbitControls.js"></script>
 	<script type="module" src="js/guitar.js"></script>
-	<script src="js/script.js"></script>
-
+	<script src="js/swoop.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>

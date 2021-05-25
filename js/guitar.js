@@ -1,6 +1,5 @@
 
 import {GLTFLoader} from './GLTFLoader.js'
-import {OrbitControls} from './OrbitControls.js'
 
 //la scene 3d de three,js
 const scene = new THREE.Scene();

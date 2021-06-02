@@ -26,6 +26,7 @@ body {
 #main {
 	display: flex;
 	height: 100vh;
+	padding: 0 3%;
 	background-size: cover;
 	justify-content: space-between;
 	flex-direction: column;

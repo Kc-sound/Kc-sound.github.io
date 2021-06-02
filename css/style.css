@@ -44,7 +44,11 @@ nav {
 
 #main header nav div button {
 	color: white;
-	background-color: black;
+	background-color: transparent;
+	border: none;
+	font-weight: bold;
+	cursor: pointer;
+	font-size: 1.5em;
 	padding: 5px;
 	margin: 5px;
 }
@@ -55,8 +59,58 @@ nav {
 }
 
 #close {
-	color: black;
-	background-color: red;
+	cursor: pointer;
+	flex: 0%;
+	margin-bottom: 20px;
+	border: none;
+}
+
+#close img {
+	float: right;
+	width: 40px;
+	transition: all 0.1s ease-in-out;
+	border: none;
+}
+#close img:hover {
+	transform: scale(1.1);
+	transition: all 0.1s ease-in-out;
+}
+
+#forgot {
+	background-color: #181c2c;
+	font-weight: bold;
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#validation {
+	background-color: var(--main);
+	font-weight: bold;
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#goToS, #goToR {
+	border: none;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#goToS:hover, #goToR:hover {
+	cursor: pointer;
+}
+
+#champLog:focus {
+	outline: none;
+	-webkit-box-shadow: 0px 0px 10px 0px var(--main);
+	box-shadow: 0px 0px 10px 2px var(--main);
+	border-radius: 5px;
+}
+
+#champLog {
+	border-radius: 5px;
 }
 
 #RechMus {
@@ -169,6 +223,8 @@ nav {
 	width: 40%;
 	align-items: center;
 	align-self: center;
+	font-weight: bold;
+	color: black;--var(--main)
 }
 
 #PopUp {

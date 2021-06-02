@@ -38,21 +38,21 @@
 	<section id="PopUp">
 		<form id="PopupSign">
 			<div id="boutonFermer">
-				<button id="close" onClick="ChangeStatusSin()"> X </button>
+				<button id="close" onClick="ChangeStatusSin()"> <img src="images/x.svg" alt=""> </button>
 			</div>
 			<div id="champ1">
 				<div>
 					<label>Pseudo : </label>
-					<input id="champ" type="text" placeholder="Jean, Marie..." required minlength="4" maxlength="15"/>
+					<input id="champLog" type="text" placeholder="Jean, Marie..." required minlength="4" maxlength="15"/>
 				</div>
 				<div>
 					<label>Password : </label>
-					<input id="champ" type="password" placeholder="azerty123" required/>
+					<input id="champLog" type="password" placeholder="azerty123" required/>
 				</div>
 			</div>
 		<div id="bouton1">
-			<button>Forgot password</button>
-			<button type="submit">Validate</button>
+			<button id="forgot">Forgot password</button>
+			<button id="validation" type="submit">Validate</button>
 		</div>
 			<div id="changer">
 				<button id="goToR" onClick="Swap()">Want to register</button>
@@ -61,24 +61,24 @@
 
 		<form id="PopupReg">
 			<div id="boutonFermer">
-			<button id="close" onClick="ChangeStatusReg()"> X </button>
+			<button id="close" onClick="ChangeStatusReg()"> <img src="images/x.svg" alt=""> </button>
 			</div>
 				<div id="champ1">
 					<label>Mail :
-				<input id="champ" type="text" placeholder="Jean@gmail.com"/>
+				<input id="champLog" type="text" placeholder="Jean@gmail.com"/>
 						</label>
 					<label>Pseudo :
-				<input id="champ" type="text" placeholder="Jean, Marie..." required/>
+				<input id="champLog" type="text" placeholder="Jean, Marie..." required/>
 					</label>
 					<label>Password :
-				<input id="champ" type="password" placeholder="azerty123" required/>
+				<input id="champLog" type="password" placeholder="azerty123" required/>
 			</label>
 					<label>Comfirm password :
-				<input id="champ" type="password" placeholder="azerty123" required/>
+				<input id="champLog" type="password" placeholder="azerty123" required/>
 		</label>
 				</div>
 			<div id="bouton1">
-			<button type="submit">Validate</button>
+			<button id="validation" type="submit">Validate</button>
 			</div>
 			<div id="changer">
 			<button id="goToS" onClick="Swap()">Already registered</button>

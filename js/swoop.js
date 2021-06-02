@@ -25,7 +25,7 @@ function swoop(text,totaltime = 2500, delaybeforeanimation = 0,infinite = false)
                 text[i].classList.add('animate');
                 }, i * tstime);
         }
-        await sleep(tstime * text.length + 100);
+        /*wait sleep(tstime * text.length + 100);
         for (let i = 0; i < text.length; i++){
             setTimeout(()=> {
                 text[i].classList.add('animate2');
@@ -36,7 +36,7 @@ function swoop(text,totaltime = 2500, delaybeforeanimation = 0,infinite = false)
             setTimeout(()=> {
                 text[i].classList.add('animate3');
                 }, i * tstime);
-        }
+        }*/
         if (infinite === true) {
             await sleep(2500);
             for (i = 0; i < text.length; i++){

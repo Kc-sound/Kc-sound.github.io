@@ -101,7 +101,7 @@ nav {
 }
 
 #titre {
-	font-size: 7em;
+	font-size: 5.5em;
 	font-family: Righteous;
 	color: var(--main);
 	font-weight: bold;
@@ -343,7 +343,6 @@ a {
 }
 #forYou > div {
 	padding: 20px 0 20px 0;
-	width: 640px;
 	display: flex;
 	border-radius: 10px;
 	background: var(--gray);
@@ -360,7 +359,7 @@ a {
 	background: rgba(0, 0, 0, 0.05);
 }
 #forYou > div {
-	width: 70%;
+	width: 80%;
 	min-width: 450px;
 	display: flex;
 	flex-direction: column;

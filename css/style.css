@@ -93,14 +93,16 @@ nav {
 	cursor: pointer;
 }
 
-#goToS, #goToR {
+#goToS,
+#goToR {
 	border: none;
 	font-weight: bold;
 	text-decoration: underline;
 	background: none;
 }
 
-#goToS:hover, #goToR:hover {
+#goToS:hover,
+#goToR:hover {
 	cursor: pointer;
 }
 
@@ -226,7 +228,7 @@ nav {
 	align-items: center;
 	align-self: center;
 	font-weight: bold;
-	color: black;--var(--main)
+	color: black;
 }
 
 #PopUp {

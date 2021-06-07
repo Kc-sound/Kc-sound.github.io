@@ -152,6 +152,7 @@ nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-bottom: 50px;
 }
 #RechMus input {
 	border-radius: 10px 0 0 10px;

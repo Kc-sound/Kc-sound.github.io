@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Kc-Sound</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="images/logo.png"/>
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/parallax.css">
+</head>
+
+<body>
+    <div id="js-scene" class="items">
+        <div class="items layers" data-depth="-0.3">
+        </div>
+        <div class="items layers" data-depth="0.4">
+        </div>
+        <div class="items layers" data-depth="-0.2">
+        </div>
+        <div class="items layers" data-depth="0.35">
+        </div>
+        <div class="items layers" data-depth="-0.45">
+        </div>
+        <div class="items layers" data-depth="0.35">
+        </div>
+        <div class="items layers" data-depth="-0.25">
+        </div>
+        <div class="items layers" data-depth="0.2">
+        </div>
+        <div class="items layers" data-depth="-0.4">
+        </div>
+    </div>
+	<section id="main2">
+		<header>
+			<nav>
+				<img src="images/logo.png" width="70" height="70" alt="Logo">
+				<div>
+					<a id="backToSweetHome" href="index.html"> Home </a>
+					<a id="Signin" onClick="ChangeStatusSin()"> Sign in </a>
+					<a id="Register" onClick="ChangeStatusReg()"> Register </a>
+				</div>
+			</nav>
+		</header>
+		<div>
+			<h1>Upload your Music</h1>
+			<form id="champ3">
+				<div id="champ2">
+					<div id="partGauche">
+						<label>Title : </label>
+						<label>Artist name : </label>
+						<label>category : </label>
+					</div>
+					<div id="partDroite">
+						<input class="champLog" type="text" placeholder="Paradise, fix you..." required minlength="4" maxlength="15"/>
+						<input class="champLog" type="text" placeholder="Coldplay..." required minlength="4" maxlength="15"/>
+						<select name="" id="">
+							<option value="">Rock</option>
+							<option value="">Jazz</option>
+							<option value="">Pop</option>
+							<option value="">Punk</option>
+							<option value="">Heavy metal</option>
+							<option value="">Rap</option>
+						</select>
+					</div>
+				</div>
+				<div id="partUpload">
+					<div id="rectangle"><p>Drag a file here</p></div>
+					<button id="uploadFile" disabled>Choose file</button>
+				</div>
+				<button id="validationMus" type="submit">UPLOAD</button>
+			</form>
+		</div>
+	</section>
+	
+
+	<script src='js/jquery.js'></script>
+    <script src='js/slideout.js'></script>
+    <script src='js/parallax.js'></script>
+    <script type="text/javascript" src="js/pog.js"></script>
+</body>
+
+</html>

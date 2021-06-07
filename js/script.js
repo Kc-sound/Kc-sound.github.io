@@ -242,4 +242,3 @@ mainline.addEventListener('animationend', () => {
 	document.body.style.overflowY = "auto";
 	swoop('titre',2000,500,false);
 });
-

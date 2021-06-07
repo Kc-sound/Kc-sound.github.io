@@ -23,17 +23,31 @@
 		</header>
 		<div>
 			<h1>Upload your Music</h1>
-			<form id="champ2">
-				<div id="partGauche">
-					<label>Title : </label>
-					<label>Artist name : </label>
+			<form id="champ3">
+				<div id="champ2">
+					<div id="partGauche">
+						<label>Title : </label>
+						<label>Artist name : </label>
+						<label>category : </label>
+					</div>
+					<div id="partDroite">
+						<input class="champLog" type="text" placeholder="Paradise, fix you..." required minlength="4" maxlength="15"/>
+						<input class="champLog" type="text" placeholder="Coldplay..." required minlength="4" maxlength="15"/>
+						<select name="" id="">
+							<option value="">Rock</option>
+							<option value="">Jazz</option>
+							<option value="">Pop</option>
+							<option value="">Punk</option>
+							<option value="">Heavy metal</option>
+							<option value="">Rap</option>
+						</select>
+					</div>
 				</div>
-				<div id="partDroite">
-					<input id="champLog" type="text" placeholder="Paradise, fix you" required minlength="4" maxlength="15"/>
-					<input id="champLog" type="text" placeholder="Paradise, fix you" required minlength="4" maxlength="15"/>
-					<img src="images/upload.png" alt="">
-					<button id="validation" type="submit">Validate</button>
+				<div id="partUpload">
+					<div id="rectangle"><p>Drag a file here</p></div>
+					<button id="uploadFile" disabled>Or choose file</button>
 				</div>
+				<button id="validationMus" type="submit">Validate</button>
 			</form>
 		</div>
 	</section>

@@ -27,10 +27,10 @@ let response = {
     "content": {
         "1": {
             "rank": "1",
-            "artist": "Olivia Rodrigo",
+            "artist": "Rick Astley",
             "last week": "2",
             "peak position": "1",
-            "weeks on chart": "20",
+            "weeks on chart": "469",
             "detail": "up"
         },
         "2": {
@@ -110,7 +110,7 @@ let response = {
 
 let allArtists = {
 	1: {
-		photo:'images/1.jpg',
+		photo:'images/rick.jpg',
 		spotify: 'https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG'
 },
 	2: {

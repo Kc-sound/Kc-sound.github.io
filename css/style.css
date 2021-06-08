@@ -58,11 +58,17 @@ nav {
 #backToSweetHome {
 	color: white;
 	background-color: transparent;
-	border: none;
 	cursor: pointer;
-	font-size: 1.5em;
-	padding: 5px;
+	font-size: 1.3em;
+	border-right: 1px solid white;
+	padding: 5px 10px;
 	margin: 5px;
+}
+#main header nav div a:hover {
+	border-right: 7.5px solid white;
+}
+#main2 header nav div a:hover {
+	border-right: 7.5px solid white;
 }
 
 #Register {

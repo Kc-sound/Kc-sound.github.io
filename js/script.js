@@ -111,7 +111,7 @@ let response = {
 let allArtists = {
 	1: {
 		photo:'images/rick.jpg',
-		spotify: 'https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG'
+		spotify: 'https://open.spotify.com/artist/0gxyHStUsqpMadRV0Di1Qt'
 },
 	2: {
 		photo:'images/2.jpg',

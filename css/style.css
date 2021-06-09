@@ -706,6 +706,9 @@ footer {
 
 /* RESPONSIVE */
 @media only screen and (max-width: 900px) {
+	#titre {
+		font-size: 4em;
+	}
 	#second {
 		flex-direction: column-reverse;
 	}

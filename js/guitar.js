@@ -21,12 +21,23 @@ document.body.appendChild( renderer.domElement );
 
 theCanvas.classList.add("absolute");
 
+function respo(c){
+    let x = window.innerWidth;
+    if (x <= 780){
+        c.style.display = "none";
+    } else{
+        c.style.display = "block";
+    }
+};
+respo(theCanvas);
+
 
 //responsive canvas
 window.addEventListener('resize',() =>{
     renderer.setSize(window.innerWidth,window.innerHeight)
     camera.aspect = window.innerWidth / window.innerHeight;
-    camera.updateProjectionMatrix()
+    camera.updateProjectionMatrix();
+    respo(theCanvas);
 })
 
 
